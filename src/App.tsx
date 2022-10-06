@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 import "./App.css";
 import data from "./data";
 import Question from "./Components/Question";
 
 function App() {
-  const [questions, setQuestions] = useState<{ id: number; title: string; info: string }[]>(data);
+  const questions: { id: number; title: string; info: string }[] = data;
   return (
     <div className="container">
       <section className="info">
